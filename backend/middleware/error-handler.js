@@ -8,7 +8,7 @@ const errorHandlerMiddleware = (err, req, res, next) => {
     //     return res.status(err.statusCode).json({ msg: err.message });
     // }
     if (err.name === "castError") {
-        customError.msg = `No workout found with id ${err.value}`
+        customError.msg = `No book found with id ${err.value}`
         customError.statusCode = 404;
     }
 
